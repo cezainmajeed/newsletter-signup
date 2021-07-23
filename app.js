@@ -30,11 +30,11 @@ const data={
 
 const jsonData=JSON.stringify(data);
 
-const url="https://us6.api.mailchimp.com/3.0/lists/e7d615c2f7";
+const url="https://us6.api.mailchimp.com/3.0/lists/api";
 
 const options={
   method: "POST",
-  auth: "cezain:4b9a57714432bd762a17bd8601ca4717-us6"
+  auth: "cezain:api_key"
 }
 const request=https.request(url,options,function(response){
 
@@ -65,13 +65,3 @@ app.listen(process.env.PORT || 3000, function() {
   console.log("Server is listening to port 3000.")
 });
 
-
-
-
-
-
-
-
-//4b9a57714432bd762a17bd8601ca4717-us6
-
-// e7d615c2f7
